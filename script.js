@@ -15,7 +15,7 @@ document.querySelector(".check").addEventListener("click", function () {
   if (!guess) {
     displayMessage("🚷 Nie ma takiego numerka!");
   } else if (guess === secretNumber) {
-    displayMessage("🎉 Correct Number!");
+    displayMessage("🎉 Zgadłeś Misiu!");
     document.querySelector(".number").textContent = secretNumber;
 
     document.querySelector("body").style.backgroundColor = "#60b347";
@@ -34,7 +34,7 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      displayMessage(" You lost the game!");
+      displayMessage(" Przegrałeś! :( ");
       document.querySelector(".score").textContent = 0;
     }
   }
